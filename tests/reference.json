@@ -1,0 +1,47 @@
+{
+  "id": "E114",
+  "value": 5.272859088230782e-21,
+  "value_70_digits": "5.272859088230781956312140016511403723614131650102065612109617352992180e-21",
+  "method": "Independent Python Decimal (90 working digits, 70-digit report); direct analytical formulas, Decimal square roots/exponentials and argument-reduced Taylor sine. SI decimal spellings are used except explicitly marked exact-binary64 regression fixtures. No JavaScript imports.",
+  "cases": [
+    {
+      "name": "Ground state has a nonzero zero-point energy",
+      "values": {
+        "level": 0
+      },
+      "expected": 5.272859088230782e-21,
+      "expected_70_digits": "5.272859088230781956312140016511403723614131650102065612109617352992180e-21"
+    },
+    {
+      "name": "First excited level has three times ground energy",
+      "values": {
+        "level": 1
+      },
+      "expected": 1.5818577264692346e-20,
+      "expected_70_digits": "1.581857726469234586893642004953421117084239495030619683632885205897654e-20"
+    },
+    {
+      "name": "Higher angular frequency and quantum number",
+      "values": {
+        "omega": 200000000000000.0,
+        "level": 10
+      },
+      "expected": 2.2146008170569285e-19,
+      "expected_70_digits": "2.214600817056928421651098806934789563917935293042867557086039288256715e-19"
+    },
+    {
+      "name": "Fractional quantum number is rejected",
+      "values": {
+        "level": 0.5
+      },
+      "throws": true
+    },
+    {
+      "name": "Negative quantum number is rejected",
+      "values": {
+        "level": -1
+      },
+      "throws": true
+    }
+  ]
+}

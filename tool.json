@@ -1,0 +1,50 @@
+{
+  "id": "E114",
+  "slug": "eng-quantum-oscillator",
+  "title": "양자 조화진동자 에너지 계산기",
+  "title_en": "Quantum Harmonic Oscillator Energy Calculator",
+  "category": "양자",
+  "category_en": "Quantum",
+  "fields": [
+    {
+      "key": "omega",
+      "label": "각진동수 ω",
+      "label_en": "Angular frequency ω",
+      "dimension": "angularSpeed",
+      "example": 100000000000000.0,
+      "constraint": "positive",
+      "display_unit": "rads",
+      "display_value": "100000000000000"
+    },
+    {
+      "key": "level",
+      "label": "양자수 n",
+      "label_en": "Quantum number n",
+      "dimension": "ratio",
+      "example": 0,
+      "constraint": "nonnegativeInteger",
+      "display_unit": "1",
+      "display_value": "0"
+    }
+  ],
+  "result_label": "조화진동자 에너지 Eₙ",
+  "result_label_en": "Harmonic oscillator energy Eₙ",
+  "result_dimension": "energy",
+  "formula": "Eₙ = ℏω(n+1/2)",
+  "purpose": "영점에너지를 포함하는 1차원 양자 조화진동자의 에너지 준위를 계산한다.",
+  "purpose_en": "Calculate a one-dimensional quantum harmonic oscillator level including its zero-point energy.",
+  "assumptions": "ω>0이며 n은 0 이상의 정수다. 평형점의 위치에너지를 0으로 정한 이상적인 포물선 퍼텐셜을 사용한다. 비조화성·감쇠·상호작용·상대론 보정은 제외한다. 입력은 Hz 주파수 f가 아니라 각진동수 ω이며 ω=2πf이다.",
+  "assumptions_en": "Required: ω>0 and nonnegative integer n. The potential is an ideal parabola with zero potential at equilibrium. Excluded: anharmonicity, damping, interactions and relativistic corrections. The input is angular frequency ω, related to frequency f in Hz by ω=2πf.",
+  "sources": [
+    {
+      "label": "OpenStax · Quantum harmonic oscillator",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/7-5-the-quantum-harmonic-oscillator"
+    }
+  ],
+  "condition": "비상대론적 조화진동자 근사가 입력한 계에 적합함을 확인했습니다.",
+  "condition_en": "I confirm that a nonrelativistic harmonic oscillator model is appropriate for the system.",
+  "output_unit": "eV",
+  "site": "https://nanalab.kr/eng-quantum-oscillator/",
+  "repository": "https://github.com/NaNaCompany/eng-quantum-oscillator",
+  "groups": []
+}
